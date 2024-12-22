@@ -53,14 +53,11 @@ footer {
   }
 }
 
-@media (min-width: 428px) {
+@media (min-width: 768px) {
   footer {
     padding: 56px 40px;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .responsive-logo {
-    width: 147px;
   }
 }
 
@@ -71,5 +68,6 @@ footer {
   p {
     font-size: $font-size-body-s;
     line-height: $line-height-body-s;
+    width: 430px;
   }
 }
