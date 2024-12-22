@@ -1,0 +1,77 @@
+@use "../abstracts/variables" as *;
+
+.responsive-image {
+  position: relative;
+  width: 100%;
+  height: 550px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    height: 600px;
+  }
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-almost-black;
+  color: $color-white;
+  padding: 60px 5%;
+  gap: 30px;
+
+  h2 {
+    font-family: $font-big-shoulders-display;
+    line-height: 45px;
+    font-size: $font-size-heading-m;
+    color: $color-white;
+    font-weight: 900;
+  }
+
+  .location-information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+      font-family: $font-big-shoulders-display;
+      line-height: $line-height-heading-s;
+      font-size: $font-size-heading-s;
+      color: $color-gold;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .location-container {
+    flex-direction: row;
+    gap: 68px;
+
+    h2 {
+      font-size: 55px;
+      font-weight: 900;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .location-container > * {
+    flex: 1 1 50%;
+
+    h2 {
+      width: 350px;
+      line-height: $line-height-heading-l;
+      font-size: $font-size-heading-l;
+      white-space: normal;
+      word-break: break-word;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  height: 72px;
+  min-height: 72px;
+  max-width: 260px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: $color-almost-black;
+  color: $color-white;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-gold;
+    color: $color-almost-black;
+
+    .icon {
+      background-color: $color-almost-black;
+      color: $color-gold;
+    }
+  }
+}
+.button-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 56px;
+  background-color: $color-gold;
+  color: $color-almost-black;
+  transition: 0.3s ease-in-out;
+}

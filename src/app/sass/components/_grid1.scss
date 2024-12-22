@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as *;
+
+.grid-container {
+  max-width: 1112px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 32px 16px 0;
+  gap: 25px;
+  justify-content: center;
+
+  .image-1 {
+    margin: 0 auto;
+    height: 320px;
+    width: 343px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 21px;
+
+    h2 {
+      font-family: $font-big-shoulders-display;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 45px;
+      color: $color-almost-black;
+    }
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color-almost-black;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 48px);
+    padding: 120px 16px 0;
+    gap: 11px;
+
+    .text-content {
+      grid-column: 1 / span 4;
+      order: -1;
+    }
+
+    .image-1 {
+      height: 400px;
+      width: 398px;
+      grid-column: 6 / span 7;
+    }
+  }
+
+  @media (min-width: 1166px) {
+    grid-template-columns: repeat(12, 65px);
+    padding: 180px 16px 0;
+    gap: 29px;
+
+    .text-content {
+      h2 {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      p {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+
+    .image-1 {
+      height: 400px;
+      width: 635px;
+    }
+  }
+}

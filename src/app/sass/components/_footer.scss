@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+
+  &.home {
+    background-color: $color-almost-black;
+    color: $color-white;
+  }
+
+  &.default {
+    background-color: $color-gold;
+    color: $color-almost-black;
+  }
+
+  p {
+    font-family: $font-outfit;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.responsive-logo {
+  width: 110px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+
+  .home {
+    path {
+      fill: white;
+      cursor: pointer;
+
+      &:hover {
+        fill: $color-gold;
+      }
+    }
+  }
+  .default {
+    path {
+      fill: $color-almost-black;
+      cursor: pointer;
+
+      &:hover {
+        fill: $color-white;
+      }
+    }
+  }
+}
+
+@media (min-width: 428px) {
+  footer {
+    padding: 45px 10%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .responsive-logo {
+    width: 147px;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: $font-size-body-s;
+    line-height: $line-height-body-s;
+  }
+}

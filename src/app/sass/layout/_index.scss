@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $color-almost-black;
+  background: $color-white;
+  font-family: $font-outfit;
+  font-size: $font-size-body-m;
+  line-height: $line-height-body-m;
+  box-sizing: border-box;
+}
