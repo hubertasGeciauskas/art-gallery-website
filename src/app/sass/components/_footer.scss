@@ -64,10 +64,10 @@ footer {
 @media (min-width: 1024px) {
   footer {
     padding: 80px 165px;
-  }
-  p {
-    font-size: $font-size-body-s;
-    line-height: $line-height-body-s;
-    width: 430px;
+    p {
+      font-size: $font-size-body-s;
+      line-height: $line-height-body-s;
+      width: 430px;
+    }
   }
 }
