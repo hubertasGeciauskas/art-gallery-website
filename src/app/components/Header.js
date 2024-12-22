@@ -21,7 +21,7 @@ export default function Header() {
       </div>
       <h1 className="dynamic-heading">
         Modern
-        <br /> Art Gallery
+        <br /> ART GALLERY
       </h1>
 
       <div className="content">
